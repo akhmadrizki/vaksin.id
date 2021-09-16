@@ -1,0 +1,81 @@
+$dark-primary: #2c3e50;
+$dark-secondary: #59728b;
+$blue-primary: #3db2ff;
+$blue-icon-bg: #e7f5ff;
+
+.animated-icon {
+  cursor: pointer;
+  height: 20px;
+  margin: 0px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  width: 30px;
+  -moz-transition: 0.5s ease-in-out;
+  -moz-transform: rotate(0deg);
+  -o-transition: 0.5s ease-in-out;
+  -o-transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -webkit-transform: rotate(0deg);
+}
+
+.animated-icon span {
+  border-radius: 9px;
+  display: block;
+  height: 3px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  width: 100%;
+  -moz-transition: 0.25s ease-in-out;
+  -moz-transform: rotate(0deg);
+  -o-transition: 0.25s ease-in-out;
+  -o-transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -webkit-transform: rotate(0deg);
+}
+
+.animated-icon span {
+  background: $dark-primary;
+}
+
+.animated-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.animated-icon span:nth-child(2),
+.animated-icon span:nth-child(3) {
+  top: 10px;
+}
+
+.animated-icon span:nth-child(4) {
+  top: 20px;
+}
+
+.animated-icon.open span:nth-child(1) {
+  left: 50%;
+  top: 11px;
+  width: 0%;
+}
+
+.animated-icon.open span:nth-child(2) {
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.animated-icon.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.animated-icon.open span:nth-child(4) {
+  left: 50%;
+  top: 11px;
+  width: 0%;
+}

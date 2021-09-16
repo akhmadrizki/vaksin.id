@@ -1,0 +1,50 @@
+.cards {
+  color: $dark-primary;
+  margin-top: 69px;
+
+  &__content {
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    margin-bottom: 32px;
+    min-height: 100%;
+    padding: 26px 11px 2px 26px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    &__icon {
+      background-color: $blue-icon-bg;
+      border-radius: 4px;
+      padding: 10px;
+      width: 48px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    h6 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.005em;
+      line-height: 140%;
+      margin-top: 18px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      margin-top: 16px;
+
+      @media (min-width: 768px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

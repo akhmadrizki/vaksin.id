@@ -1,0 +1,24 @@
+@import "./config/base";
+
+@font-face {
+  font-family: "poppins";
+  src: url(../../font/Poppins-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+@import "./partials/header";
+
+@import "./pages/home/banner";
+@import "./partials/searchBox";
+@import "./pages/home/infografis";
+@import "./pages/home/cards";
+@import "./pages/home/fact";
+@import "./pages/home/warning";
+@import "./pages/home/static";
+
+@import "./partials/footer";

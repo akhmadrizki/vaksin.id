@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style/main.min.css">
+  <link rel="stylesheet" href="./assets/font/font-icon/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+
+  <title>Vaksin.id</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="navigation">
+        <div class="navigation__content">
+          <a href="#"><img src="./assets/img/logo.svg" class="navigation__logo"></a>
+        </div>
+        <div class="navigation__content navigation__content__desktop">
+          <li><a href="#" class="navigation__active">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">service</a></li>
+          <li><a href="#">news</a></li>
+        </div>
+  
+        <div class="navigation__content kelik d-lg-none d-block">
+          <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+          </button>
+        </div>
+      </div>
+  
+      <div class="navigation__mobile text-center">
+        <a href="#" class="navigation__active">home</a>
+        <a href="#">about</a>
+        <a href="#">service</a>
+        <a href="#">news</a>
+      </div>
+    </div>
+  </header>
+  
+  <div class="banner">
+    <div class="container">
+      <div class="banner__content">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Dengan Vaksin Kita Dapat Mengakhiri Pandemi Ini</h1>
+            <p>Dengan vaksinasi, kita dapat mengurangi jumlah kasus penularan covid-19 dan bisa menciptakan herd immunity</p>
+            <div class="banner__social d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <span class="mdi mdi-play-circle-outline banner__social--icon"></span>
+              <h6>Social Introduction</h6>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner__image">
+              <img src="./assets/img/img1.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/P1vBLOT5nuQ" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="search-box">
+    <div class="container">
+      <div class="search-box__content">
+        <form action="#" class="align-items-center">
+          <div class="row">
+            <div class="col-lg-4 col-md-3 search-box__mobile">
+              <label for="selectLocation" class="form-label">Location</label>
+              <select class="form-select border-0" aria-label="Default select example" id="selectLocation">
+                <option selected>- Pilih Lokasi -</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-lg-3 col-md-4 search-box__mobile">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" class="form-control border-0" id="date">
+            </div>
+            <div class="col-lg-3 col-md-3 search-box__mobile">
+              <label for="vaccine" class="form-label">Vaccine Type</label>
+              <select class="form-select border-0" aria-label="Default select example" id="vaccine">
+                <option selected>- Jenis Vaksin -</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-lg-2 col-md-2 search-box__mobile">
+              <button type="button" class="btn btn-primary search-box__button float-end">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="infografis">
+      <div class="row infografis__why">
+        <div class="col-lg-6">
+          <h3>Kenapa kita harus vaksin?</h3>
+          <p>Agar tidak ragu untuk mendapatkan vaksin covid-19, kenali 4 manfaat vaksinasi covid-19 berikut ini :</p>
+        </div>
+      </div>
+
+      <div class="row cards">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="cards__content">
+            <div class="cards__content__icon">
+              <img src="./assets/img/settings.png">
+            </div>
+            <h6>Meminimalisir penyebaran virus</h6>
+            <p>vaksin terbukti ampuh mencegah seseorang tertular virus corona</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="cards__content">
+            <div class="cards__content__icon">
+              <img src="./assets/img/shield.png">
+            </div>
+            <h6>Membentuk antibodi</h6>
+            <p>vaksin covid-19 terbukti membantu membentuk respon antibodi untuk sistem imun</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="cards__content">
+            <div class="cards__content__icon">
+              <img src="./assets/img/user-group.png">
+            </div>
+            <h6>Melindungi orang terdekat</h6>
+            <p>manfaat dari vaksin yang kita dapatkan juga dapat membantu melindungi orang di sekitar kita</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="cards__content">
+            <div class="cards__content__icon">
+              <img src="./assets/img/notification.png">
+            </div>
+            <h6>Menciptakan kekebalan kelompok</h6>
+            <p>vaksinasi covid-19 juga bermanfaat untuk menciptakan kekebalan kelompok atau herd immunity</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row fact">
+        <div class="col-lg-6">
+          <div class="fact__image">
+            <img src="./assets/img/img2.png">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3>Vaksin yang disediakan sudah teruji secara klinis</h3>
+          <p class="fact__subheading">Jangan takut untuk divaksin, karena vaksin telah diuji secara bertahap dan detail</p>
+
+          <div class="row fact__card">
+            <div class="col-lg-6">
+              <div class="fact__card__content">
+                <div class="fact__card__content__icon">
+                  <img src="./assets/img/injection.png">
+                </div>
+                <p>Vaksin telah diuji coba oleh beberapa hewan percobaan</p>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="fact__card__content">
+                <div class="fact__card__content__icon">
+                  <img src="./assets/img/pill.png">
+                </div>
+                <p>Vaksin yang telah diuji di lab langkah demi langkah dan detail</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row warning">
+        <div class="col-lg-6">
+          <h3>Bahaya Mengintai Kamu yang Tolak Suntik Vaksin Covid-19</h3>
+          <p>Vaksinasi masih melindungi mereka yang mendapatkan suntikkan dibandingkan yang tidak. Orang yang tidak divaksin 29 kali
+          lebih beresiko tertular, bahkan <b>94%</b> kematian COVID-19 akibat belum divaksinasi.</p>
+        </div>
+        <div class="col-lg-6 mt-4">
+          <div class="row">
+            <div class="col-lg-6 warning__mobile">
+              <div class="warning__content d-flex align-items-center mb-5">
+                <div class="warning__content__icon text-center">
+                  <h4>01</h4>
+                </div>
+                <h5>Resiko Kematian Lebih Tinggi</h5>
+              </div>
+
+              <div class="warning__content d-flex align-items-center">
+                <div class="warning__content__icon text-center">
+                  <h4>02</h4>
+                </div>
+                <h5>Kesembuhan Lebih Lama</h5>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="warning__content d-flex align-items-center mb-5">
+                <div class="warning__content__icon text-center">
+                  <h4>03</h4>
+                </div>
+                <h5>Potensi Bergejala Berat</h5>
+              </div>
+
+              <div class="warning__content d-flex align-items-center">
+                <div class="warning__content__icon text-center">
+                  <h4>04</h4>
+                </div>
+                <h5>Rentan Terkena Varian Baru</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="static">
+    <div class="container">
+      <div class="static__main text-center">
+        <h3>Berikut data terbaru<br>terkait covid-19</h3>
+      
+        <div class="row static__main__content text-center">
+          <div class="col-lg-3 col-md-6 col-sm-6 static__main__count">
+            <h3><span class="counter">125000</span></h3>
+            <p>pasien sembuh</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 static__main__count">
+            <h3><span class="counter">92000</span></h3>
+            <p>pasien dalam perawatan</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 static__main__count">
+            <h3><span class="counter">25000</span></h3>
+            <p>pasien karantina</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 static__main__count">
+            <h3><span class="counter">1200</span></h3>
+            <p>rumah sakit aktif</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer text-center">
+    <h6>Copyright &copy; Vaksin.id - All right reserved | Made by Akhmad Rizki Prayoga with ❤️ 2021</h6>
+    <div class="footer__content d-flex justify-content-center">
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-youtube footer__content__icon__size"></span>
+        <span class="footer__content__text">Youtube</span>
+      </div>
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-instagram footer__content__icon__size"></span>
+        <span class="footer__content__text">Instagram</span>
+      </div>
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-twitter footer__content__icon__size"></span>
+        <span class="footer__content__text">Twitter</span>
+      </div>
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-facebook footer__content__icon__size"></span>
+        <span class="footer__content__text">Facebook</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/waypoints.min.js"></script>
+  <script src="./assets/js/jquery.counterup.min.js"></script>
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 4);
+    });
+
+    $(document).ready(function () {
+        $(".kelik").click(function () {
+          $(".navigation__mobile").fadeToggle();
+          document.querySelector('.animated-icon').classList.toggle('open');
+        });
+        $(window).click(function (e) {
+          if (!document.querySelector('.kelik').contains(e.target) && !document.querySelector('.navigation__mobile').contains(e.target)) {
+            document.querySelector('.animated-icon').classList.toggle('open');
+            $(".navigation__mobile").fadeOut();
+          }
+        });
+      });
+
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
+    });
+  </script>
+
+</body>
+
+</html>

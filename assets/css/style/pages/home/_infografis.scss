@@ -1,0 +1,25 @@
+.infografis {
+  color: $dark-primary;
+  padding: 100px 0 40px 0;
+  width: 100%;
+
+  h3 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    line-height: 130%;
+
+    @media (min-width: 576px) {
+      font-size: 32px;
+    }
+  }
+
+  &__why {
+    p {
+      font-size: 18px;
+      letter-spacing: 0.005em;
+      line-height: 140%;
+      margin-top: 18px;
+    }
+  }
+}

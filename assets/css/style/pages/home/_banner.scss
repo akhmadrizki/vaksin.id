@@ -1,0 +1,85 @@
+.banner {
+  background: linear-gradient(
+    146.63deg,
+    #3db2ff -587.39%,
+    #cdebff -138.58%,
+    #ffffff 91.13%
+  );
+  width: 100%;
+
+  @media (min-width: 992px) {
+    height: 100vh;
+  }
+
+  &__content {
+    padding-top: 142px;
+    width: 100%;
+
+    @media (max-width: 991px) {
+      padding-bottom: 82px;
+    }
+
+    h1 {
+      color: $dark-primary;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: 0.005em;
+      line-height: 130%;
+
+      @media (min-width: 576px) {
+        font-size: 46px;
+      }
+    }
+
+    p {
+      color: $dark-primary;
+      font-size: 16px;
+      line-height: 140%;
+      margin-top: 12px;
+    }
+  }
+
+  &__social {
+    cursor: pointer;
+    margin-top: 48px;
+    padding: 2px 0;
+    width: 220px;
+    transition: 0.6s;
+
+    &:hover {
+      border-radius: 50px;
+      box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.2);
+      padding: 0 8px;
+      width: 250px;
+    }
+
+    &--icon {
+      color: $dark-primary;
+      font-size: 38px;
+    }
+
+    h6 {
+      color: $dark-primary;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 140%;
+      margin: 0 0 0 12px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: -86px;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}
