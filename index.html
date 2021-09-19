@@ -27,8 +27,8 @@
         <div class="navigation__content navigation__content__desktop">
           <li><a href="#" class="navigation__active">home</a></li>
           <li><a href="#">about</a></li>
-          <li><a href="#">service</a></li>
-          <li><a href="#">news</a></li>
+          <li><a href="#">FAQ</a></li>
+          <button type="button" class="btn btn-outline-primary navigation__btn">Unduh Formulir Vaksin</button>
         </div>
   
         <div class="navigation__content kelik d-lg-none d-block">
@@ -44,7 +44,7 @@
         <a href="#" class="navigation__active">home</a>
         <a href="#">about</a>
         <a href="#">service</a>
-        <a href="#">news</a>
+        <button type="button" class="btn btn-outline-primary navigation__mobile__btn">Unduh Formulir Vaksin</button>
       </div>
     </div>
   </header>
@@ -54,7 +54,7 @@
       <div class="banner__content">
         <div class="row">
           <div class="col-lg-6">
-            <h1>Dengan Vaksin Kita Dapat Mengakhiri Pandemi Ini</h1>
+            <h1>Temukan Vaksin Favoritmu, Dimanapun dan Kapanpun Kamu Perlu</h1>
             <p>Dengan vaksinasi, kita dapat mengurangi jumlah kasus penularan covid-19 dan bisa menciptakan herd immunity</p>
             <div class="banner__social d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <span class="mdi mdi-play-circle-outline banner__social--icon"></span>
@@ -68,6 +68,41 @@
           </div>
         </div>
       </div>
+
+      <div class="search-box-banner">
+        <div class="search-box-banner__content">
+          <form action="#" class="align-items-center">
+            <div class="row">
+              <div class="col-lg-4 col-md-3 search-box-banner__mobile">
+                <label for="selectLocation" class="form-label">Location</label>
+                <select class="form-select border-0" aria-label="Default select example" id="selectLocation">
+                  <option selected>- Pilih Lokasi -</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-4 search-box-banner__mobile">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control border-0" id="date">
+              </div>
+              <div class="col-lg-3 col-md-3 search-box-banner__mobile">
+                <label for="vaccine" class="form-label">Vaccine Type</label>
+                <select class="form-select border-0" aria-label="Default select example" id="vaccine">
+                  <option selected>- Jenis Vaksin -</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-lg-2 col-md-2 search-box-banner__mobile">
+                <button type="button" class="btn btn-primary search-box-banner__button float-end">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
     </div>
 
     <!-- Modal -->
@@ -93,7 +128,7 @@
       <div class="search-box__content">
         <form action="#" class="align-items-center">
           <div class="row">
-            <div class="col-lg-4 col-md-3 search-box__mobile">
+            <div class="col-lg-4 col-md-4 search-box__mobile">
               <label for="selectLocation" class="form-label">Location</label>
               <select class="form-select border-0" aria-label="Default select example" id="selectLocation">
                 <option selected>- Pilih Lokasi -</option>
@@ -106,7 +141,7 @@
               <label for="date" class="form-label">Date</label>
               <input type="date" class="form-control border-0" id="date">
             </div>
-            <div class="col-lg-3 col-md-3 search-box__mobile">
+            <div class="col-lg-3 col-md-4 search-box__mobile">
               <label for="vaccine" class="form-label">Vaccine Type</label>
               <select class="form-select border-0" aria-label="Default select example" id="vaccine">
                 <option selected>- Jenis Vaksin -</option>
@@ -115,8 +150,8 @@
                 <option value="3">Three</option>
               </select>
             </div>
-            <div class="col-lg-2 col-md-2 search-box__mobile">
-              <button type="button" class="btn btn-primary search-box__button float-end">Submit</button>
+            <div class="col-lg-2 col-md-12 search-box__mobile">
+              <button type="button" class="btn btn-primary search-box__button">Submit</button>
             </div>
           </div>
         </form>
@@ -312,12 +347,6 @@
         $(".kelik").click(function () {
           $(".navigation__mobile").fadeToggle();
           document.querySelector('.animated-icon').classList.toggle('open');
-        });
-        $(window).click(function (e) {
-          if (!document.querySelector('.kelik').contains(e.target) && !document.querySelector('.navigation__mobile').contains(e.target)) {
-            document.querySelector('.animated-icon').classList.toggle('open');
-            $(".navigation__mobile").fadeOut();
-          }
         });
       });
 

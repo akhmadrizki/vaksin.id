@@ -25,7 +25,7 @@
   font-size: 16px;
   font-weight: 400;
   justify-content: space-between;
-  padding: 26px 0;
+  padding: 16px 0;
   position: relative;
   width: 100%;
   z-index: 9;
@@ -42,6 +42,10 @@
         margin-left: 58px;
         text-decoration: none;
         text-transform: capitalize;
+
+        &:hover {
+          font-weight: 800;
+        }
       }
     }
 
@@ -80,6 +84,21 @@
         border: none;
       }
     }
+
+    &__btn {
+      border-color: $blue-primary;
+      color: $blue-primary;
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+
+  &__btn {
+    border-color: $blue-primary;
+    color: $blue-primary;
+    font-size: 16px;
+    margin-left: 58px;
+    padding: 12px;
   }
 }
 

@@ -5,10 +5,20 @@
     #cdebff -138.58%,
     #ffffff 91.13%
   );
+  padding-bottom: 26px;
   width: 100%;
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     height: 100vh;
+  }
+
+  @media (min-height: 1024px) {
+    height: 100%;
+  }
+
+  @media (min-width: 1400px) {
+    height: 100%;
+    padding-bottom: 36px;
   }
 
   &__content {
@@ -16,18 +26,19 @@
     width: 100%;
 
     @media (max-width: 991px) {
-      padding-bottom: 82px;
+      padding-bottom: 26px;
+      padding-top: 120px;
     }
 
     h1 {
       color: $dark-primary;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 600;
       letter-spacing: 0.005em;
       line-height: 130%;
 
       @media (min-width: 576px) {
-        font-size: 46px;
+        font-size: 40px;
       }
     }
 
@@ -41,7 +52,7 @@
 
   &__social {
     cursor: pointer;
-    margin-top: 48px;
+    margin-top: 26px;
     padding: 2px 0;
     width: 220px;
     transition: 0.6s;
@@ -69,9 +80,9 @@
 
   &__image {
     display: flex;
-    height: 500px;
+    height: 436px;
     justify-content: center;
-    margin-top: -86px;
+    margin-top: -60px;
     width: 100%;
 
     img {
