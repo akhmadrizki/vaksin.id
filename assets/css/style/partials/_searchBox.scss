@@ -23,6 +23,7 @@
     color: #fff;
     margin-top: 8px;
     padding: 14px 28px;
+    width: 100%;
   }
 
   &__mobile {
@@ -81,4 +82,40 @@
 
 .form-select:focus {
   box-shadow: none;
+}
+
+.secondary-searchbox {
+  padding-top: 142px;
+}
+
+.search-box-banners {
+  color: #ccc;
+
+  &__content {
+    background-color: #fff;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    width: 100%;
+  }
+
+  &__button {
+    background-color: $blue-primary;
+    border: none;
+    color: #fff;
+    margin-top: 8px;
+    padding: 14px 28px;
+    width: 100%;
+  }
+
+  &__mobile {
+    @media (max-width: 767px) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+      margin-bottom: 12px;
+      width: 100%;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
 }

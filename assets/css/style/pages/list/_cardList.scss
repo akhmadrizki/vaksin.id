@@ -1,0 +1,62 @@
+.card-list {
+  margin-top: 84px;
+  padding: 18px 0 164px 0;
+  width: 100%;
+
+  &__content {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+    padding: 32px 18px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    &:hover {
+      box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    h4 {
+      color: $dark-primary;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 140%;
+      letter-spacing: 0.005em;
+    }
+
+    &__jadwal {
+      color: $dark-secondary;
+      font-size: 14px;
+      line-height: 140%;
+      margin-top: 19px;
+    }
+
+    &__text {
+      color: $dark-primary;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 140%;
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $blue-primary;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    border: 2px solid $blue-primary;
+    border-radius: 4px;
+    color: $blue-primary;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    padding: 14px;
+    text-align: center;
+  }
+}

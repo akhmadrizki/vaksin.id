@@ -1,0 +1,20 @@
+.faq {
+  padding: 142px 0 164px 0;
+
+  h1 {
+    color: $dark-primary;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    line-height: 130%;
+  }
+}
+
+.accordion-button {
+  color: $dark-primary !important;
+  font-weight: 600 !important;
+}
+
+.accordion-body {
+  color: $dark-secondary;
+}
