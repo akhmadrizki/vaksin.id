@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style/main.min.css">
+  <link rel="stylesheet" href="./assets/font/font-icon/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+  
+  <title>Vaksin.id</title>
+</head>
+<body>
+  <header class="header secondary">
+    <div class="container">
+      <div class="navigation">
+        <div class="navigation__content">
+          <a href="./index.html"><img src="./assets/img/logo.svg" class="navigation__logo"></a>
+        </div>
+        <div class="navigation__content navigation__content__desktop">
+          <li><a href="./index.html">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="./faq.html" class="navigation__active">FAQ</a></li>
+          <a href="https://lldikti8.ristekdikti.go.id/wp-content/uploads/2021/05/Lampiran_Kartu-Kendali-Vaksin-Covid19-1.pdf"
+            target="_blank" type="button" class="btn btn-outline-primary navigation__btn">Unduh Formulir Vaksin</a>
+        </div>
+  
+        <div class="navigation__content kelik d-lg-none d-block">
+          <a href="https://lldikti8.ristekdikti.go.id/wp-content/uploads/2021/05/Lampiran_Kartu-Kendali-Vaksin-Covid19-1.pdf"
+            target="_blank" type="button"
+            class="btn btn-outline-primary navigation__mobile__btn navigation__mobile__btn--responsive">Unduh Formulir
+            Vaksin</a>
+          <button class="navbar-toggler second-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+          </button>
+        </div>
+      </div>
+  
+      <div class="navigation__mobile text-center">
+        <a href="./index.html">home</a>
+        <a href="#">about</a>
+        <a href="./faq.html" class="navigation__active">FAQ</a>
+        <a href="https://lldikti8.ristekdikti.go.id/wp-content/uploads/2021/05/Lampiran_Kartu-Kendali-Vaksin-Covid19-1.pdf"
+          target="_blank" type="button"
+          class="btn btn-outline-primary navigation__mobile__btn navigation__mobile__btn--down">Unduh Formulir Vaksin</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="about">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="about__image">
+            <img src="./assets/img/img3.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="wording">
+            <h2>Vaksin.id</h2>
+            <p>
+              Merupakan platform untuk berbagi informasi kepada masyarakat Indonesia dalam hal vaksinasi covid-19. Jangan khawatir
+              Vaksin yang diproduksi massal sudah melewati proses yang panjang dan memenuhi syarat utama yakni: Aman, Ampuh, Stabil,
+              dan Efisien.
+            </p>
+            <p>Vaksin melindungimu, 5M menyelamatkanmu!</p>
+            <p>Mari wujukan Inonesia bebas covid dengan mengikuti program vaksin!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer text-center">
+    <h6>Copyright &copy; Vaksin.id - All right reserved | Made by Akhmad Rizki Prayoga with ❤️ 2021</h6>
+    <div class="footer__content d-flex justify-content-center">
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-youtube footer__content__icon__size"></span>
+        <span class="footer__content__text">Youtube</span>
+      </div>
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-instagram footer__content__icon__size"></span>
+        <span class="footer__content__text">Instagram</span>
+      </div>
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-twitter footer__content__icon__size"></span>
+        <span class="footer__content__text">Twitter</span>
+      </div>
+      <div class="footer__content__icon d-flex align-items-center">
+        <span class="mdi mdi-facebook footer__content__icon__size"></span>
+        <span class="footer__content__text">Facebook</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 4);
+    });
+
+    $(document).ready(function () {
+      $(".kelik").click(function () {
+        $(".navigation__mobile").fadeToggle();
+        document.querySelector('.animated-icon').classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -77,29 +77,31 @@
           <form action="#" class="align-items-center">
             <div class="row">
               <div class="col-lg-4 col-md-3 search-box-banner__mobile">
-                <label for="selectLocation" class="form-label">Location</label>
-                <select class="form-select border-0" aria-label="Default select example" id="selectLocation">
-                  <option selected>- Pilih Lokasi -</option>
+                <label for="selectProvinsi" class="form-label">Provinsi</label>
+                <select class="form-select border-0" aria-label="Default select example" id="selectProvinsi">
+                  <option selected>- Pilih Provinsi -</option>
+                </select>
+              </div>
+              <div class="col-lg-3 col-md-4 search-box-banner__mobile">
+                <label for="city" class="form-label">Kota</label>
+                <select class="form-select border-0" aria-label="Default select example" id="city">
+                  <option selected>- Pilih Kota -</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="col-lg-3 col-md-4 search-box-banner__mobile">
-                <label for="date" class="form-label">Date</label>
-                <input type="date" class="form-control border-0" id="date">
-              </div>
               <div class="col-lg-3 col-md-3 search-box-banner__mobile">
-                <label for="vaccine" class="form-label">Vaccine Type</label>
-                <select class="form-select border-0" aria-label="Default select example" id="vaccine">
-                  <option selected>- Jenis Vaksin -</option>
+                <label for="old" class="form-label">Usia</label>
+                <select class="form-select border-0" aria-label="Default select example" id="old">
+                  <option selected>- Semua Umur -</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
                   <option value="3">Three</option>
                 </select>
               </div>
               <div class="col-lg-2 col-md-2 search-box-banner__mobile">
-                <a href="./list.html" type="button" class="btn btn-primary search-box-banner__button float-end">Submit</a>
+                <button type="button" class="btn btn-primary search-box-banner__button float-end submitClick">Submit</button>
               </div>
             </div>
           </form>
@@ -132,29 +134,34 @@
         <form action="#" class="align-items-center">
           <div class="row">
             <div class="col-lg-4 col-md-4 search-box__mobile">
-              <label for="selectLocation" class="form-label">Location</label>
-              <select class="form-select border-0" aria-label="Default select example" id="selectLocation">
-                <option selected>- Pilih Lokasi -</option>
+              <label for="selectProvinsi" class="form-label">Provinsi</label>
+              <select class="form-select border-0" aria-label="Default select example" id="selectProvinsi">
+                <option selected>- Pilih Provinsi -</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
             </div>
             <div class="col-lg-3 col-md-4 search-box__mobile">
-              <label for="date" class="form-label">Date</label>
-              <input type="date" class="form-control border-0" id="date">
+              <label for="city" class="form-label">Kota</label>
+              <select class="form-select border-0" aria-label="Default select example" id="city">
+                <option selected>- Pilih Kota -</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
             </div>
             <div class="col-lg-3 col-md-4 search-box__mobile">
-              <label for="vaccine" class="form-label">Vaccine Type</label>
-              <select class="form-select border-0" aria-label="Default select example" id="vaccine">
-                <option selected>- Jenis Vaksin -</option>
+              <label for="old" class="form-label">Usia</label>
+              <select class="form-select border-0" aria-label="Default select example" id="old">
+                <option selected>- Semua Umur -</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
             </div>
             <div class="col-lg-2 col-md-12 search-box__mobile">
-              <a href="./list.html" type="button" class="btn btn-primary search-box__button">Submit</a>
+              <button type="button" class="btn btn-primary search-box-banner__button float-end submitClick">Submit</button>
             </div>
           </div>
         </form>
@@ -339,6 +346,7 @@
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/waypoints.min.js"></script>
   <script src="./assets/js/jquery.counterup.min.js"></script>
+  <script src="./assets/js/index.js"></script>
 
   <script type="text/javascript">
     window.addEventListener("scroll", function(){
