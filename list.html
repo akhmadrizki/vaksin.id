@@ -192,6 +192,12 @@
   <script src="./assets/js/jquery.min.js"></script>
 
   <script type="text/javascript">
+
+    // Get params from url
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    console.log(params);
+
     window.addEventListener("scroll", function () {
       var header = document.querySelector("header");
       header.classList.toggle("sticky", window.scrollY > 4);
